@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<form id="search_form" action="/nbase" method="post" style="margin: 50px;">
+    <input type="text" id="search_item" placeholder="Search here...." name="search_item">
+    <input type="submit" id="submit_button" name="submit_button">
+</form>
+{% endblock %}

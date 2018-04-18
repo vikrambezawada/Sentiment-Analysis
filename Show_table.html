@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Main page</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <style type="text/css">
+  	.boxborders{
+  		border:10px;
+  		margin-left:130px;
+  		border-radius: 15px;
+  		border-color: lightgreen;
+  		text-align: center;
+  		background-color: #0099FF;
+
+  	}
+  	.bgcolors_green{
+  		background-color: #33CCFF;
+  		margin-left: 40px;
+  		border-radius: 30px;
+  	}
+  	.bgcolors_red{
+  		background-color: red;
+  	}
+  	.bgcolors_blue{
+  		background-color: #33CCFF;
+  		margin-left: 90px;
+  		border-radius: 30px;
+  	}
+  	.onlygreen{
+  		background-color: lightgreen;
+  		border-radius: 5px;
+
+  		margin-left:5px;
+  	}
+  </style>
+
+</head>
+<body style="background-color: #40ff9d">
+
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #82ff53">
+
+    <p style="margin-left: 450px;font-size: 50px">Twitter Sentiment Analysis</p>
+</nav>
+<br>
+<div class="container">
+
+  <table class="table">
+    <thead>
+      <tr class="table-primary">
+        <th>Results found for {{ tweet_name }} from recent tweets in Twitter</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="table-primary">
+        <td>what people think of {{ tweet_name }} </td>
+
+      <tr class="table-danger">
+        <td>Neutral : {{ nep }}%</td>
+        </tr>
+      <tr class="table-info">
+        <td>Postive : {{ pp }}%</td>
+      </tr>
+      <tr class="table-warning">
+        <td>Negative : {{ np }}%</td>
+      </tr>
+        </tbody>
+  </table>
+</div>
+<div class=" container" style="background-color:#093145;color:white;border: 25px;border-radius: 15px ">
+    <P style="font-size: 35px;text-align: center">General Report :: {{ Gt }}</P>
+
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
