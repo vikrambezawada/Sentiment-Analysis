@@ -1,0 +1,4 @@
+Database.py is to handle the database operation
+Html pages are for front end 
+Mainbg is actually the main python file to process the text received from twitter and store them in  Mongo database
+Baserub is used to base python file to interact with user through web page using Flask microserver
